@@ -6,29 +6,65 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Ping coming soon page</title>
+  <title>Ping coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://kit.fontawesome.com/2814e0ee6f.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
-  We are launching soon!
+  <div class="container">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="Ping Logo">
+    </div>
 
-  Subscribe and get notified
+    <div class="header">
+      <h1>We are launching <span>soon!</span></h1>
+      <p>Subscribe and get notified</p>
+    </div>
 
-  Notify Me
+    <form id="form">
+      <div class="email-box">
+        <input type="email" name="email" id="email" placeholder="Your email address...">
+        <p id="msg"></p>
+      </div>
+      <button id="btn" type="submit">Notify Me</button>
+    </form>
 
-  &copy; Copyright Ping. All rights reserved.
+    <div class="illustration">
+      <img src="./images/illustration-dashboard.png" alt="Dashboard illustration">
+    </div>
+
+    <div class="socials">
+      <div class="social-icon">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+
+      <div class="social-icon">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      
+      <div class="social-icon">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+  </div>
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/TheRealMentor/" target="_blank">Sharad Roy</a> with 💖.
     </p>
   </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>

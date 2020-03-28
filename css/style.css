@@ -1,0 +1,189 @@
+/* SETUP CSS */
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+  --font-size: 20px;
+  --font-family: 'Libre Franklin';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family), sans-serif;
+  font-size: var(--font-size);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header */
+.logo {
+  margin-top: 70px;
+}
+
+.header {
+  margin-top: 30px;
+}
+
+.header h1 {
+  font-weight: 300;
+  font-size: 2.5em;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+.header h1 span {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+/* Form */
+#form {
+  margin-top: 40px;
+}
+
+#form input,
+#btn {
+  padding: 15px 25px;
+  border-radius: 50px;
+  font: inherit;
+  font-size: 15px;
+}
+
+input[type="email"] {
+  width: 360px;
+  margin-right: 10px;
+  color: var(--gray);
+  border: 2px solid #cec7c7a9;
+}
+
+#btn {
+  cursor: pointer;
+  width: 180px;
+  color: white;
+  font-weight: 700;
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+  box-shadow: 0px 5px 10px -5px var(--gray);
+}
+
+.email-box, #btn {
+  position: relative;
+  display: inline-block;
+}
+
+#msg {
+  font-size: 13px;
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  font-style: italic;
+}
+
+.illustration {
+  margin: 80px 0;
+}
+
+.illustration img {
+  width: 630px;
+}
+
+.social-icon {
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--pale-blue);
+  margin: 0 5px;
+  position: relative;
+}
+
+.socials a i {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.copyright {
+  font-size: 12px;
+  margin: 20px 0;
+  color: var(--gray);
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  padding: 40px 0;
+  margin-top: 30px;
+  color: white;
+  background-color: var(--very-dark-blue);
+  justify-content: center;
+}
+
+footer p a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+/* MOBILE VIEW */
+@media (max-width: 375px) {
+  :root {
+    --font-size: 13px;
+  }
+
+  .logo img { 
+    width: 50px;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+
+  #form input,
+  #btn {
+    padding: 15px 25px;
+    border-radius: 50px;
+    font: inherit;
+  }
+
+  input[type="email"] {
+    width: 245px;
+    margin-bottom: 10px;
+    color: var(--gray);
+    border: 2px solid #cec7c7a9;
+  }
+
+  .email-box, #btn {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .illustration img {
+    width: 300px;
+  }
+
+  footer {
+    padding: 40px;
+    text-align: center;
+  }
+
+  footer p a {
+    text-decoration: none;
+    color: var(--blue);
+  }
+
+}
