@@ -37,7 +37,9 @@ function validation() {
     document.getElementById('email').style.borderColor = green;
   }
 
-  btn.style.marginTop = "50px";
+  if(window.screen.width < 375) {
+    btn.style.marginTop = "50px";
+  }
 }
 
 function isEmail(email) {
